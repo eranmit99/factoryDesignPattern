@@ -14,7 +14,7 @@ class UploadersFactory {
 		this.S3 = S3;
 	}
 
-	createUploader(provider) {
+	create(provider) {
 		switch (provider) {
 			case 'Cloudinary':
 				return new this.Cloudinary;

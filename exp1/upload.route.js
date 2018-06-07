@@ -1,8 +1,8 @@
-const uploadersFactory = require('./uploadersFactory.js');
+const uploader = require('./uploader');
 
 
-const cloudinary = uploadersFactory.createUploader('Cloudinary');
-const s3 = uploadersFactory.createUploader('S3');
+const cloudinary = uploader.create('Cloudinary');
+const s3 = uploader.create('S3');
 
 cloudinary.upload();
 s3.upload();

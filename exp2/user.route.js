@@ -1,6 +1,6 @@
 const models = require('./models');
 
-const customerModel = models.createModel('Customer');
+const customerModel = models.create('Customer');
 
 const c = customerModel.getCustomerById(1234);
 

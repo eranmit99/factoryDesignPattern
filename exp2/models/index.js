@@ -10,7 +10,7 @@ class ModelsFactory {
 		this.CustomerModel = CustomerModel;
 	}
 
-	createModel(modelName) {
+	create(modelName) {
 		
 		switch (modelName) {
 			case 'User':
